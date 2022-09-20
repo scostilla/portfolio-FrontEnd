@@ -2,6 +2,20 @@
 let message = 'developed by Sebastian Costilla  for #YoProgramo Full Stack Web Developer Certification Course';
 console.log(message);
 
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px or 
+ Set the width of the side navigation to 0 and the left margin of the page content to 0 depends 
+ on the style.width vlue*/
+function openNav() {
+  if(document.getElementById("mySidenav").style.width === "250px"){
+    document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+  }else{
+    document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  }
+}
+
+
 (function() {
     "use strict";
   
