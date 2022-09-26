@@ -31,10 +31,21 @@ h2 {
 }
 
 body {
-  background-color: #4b4b4b;
+  background-color: #5a5959;
   color: rgb(104, 102, 102);
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
+}
+body::after {
+  content: "";
+  background-image: url("../images/Argentina-programa.png");
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
 }
 
 .w3-padding {
@@ -652,7 +663,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #555555;
+  color: #adadad;
 }
 
 .about .content ul {
@@ -832,7 +843,7 @@ section {
   font-size: 18px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #1d685f;
+  color: #33c0b0;
   margin-bottom: 10px;
 }
 
@@ -1191,7 +1202,6 @@ section {
       --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
-  background: #fff;
 }
 
 .contact .info i {
@@ -1220,13 +1230,17 @@ section {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #555555;
+  color: #adadad;
 }
 
 .contact .info .email,
 .contact .info .phone,
 .contact .info .linkedin {
   margin-top: 40px;
+}
+
+.menubutton{
+  cursor: pointer;
 }
 
 .contact .info .email:hover i,
